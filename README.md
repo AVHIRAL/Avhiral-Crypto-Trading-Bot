@@ -6,7 +6,7 @@ Le Avhiral Crypto Trading Bot est un bot de trading automatisé qui prend en cha
 
 https://www.youtube.com/watch?v=pKDzmtIlYYY
 
-## Installation
+# Installation
 
 Avant de pouvoir utiliser le bot, assurez-vous de suivre ces étapes d'installation :
 
@@ -16,7 +16,7 @@ Avant de pouvoir utiliser le bot, assurez-vous de suivre ces étapes d'installat
 
 3. Ouvrez le fichier AVHIRAL_BOT_CRYPTO_BINANCE_V7.8_OFF.py et configurez l'adresse e-mail du destinataire dans la variable RECIPIENT_EMAIL = 'exemple@gmail.com'
 
-#Utilisation :
+# Utilisation :
 
 Une fois l'installation terminée et la configuration effectuée, vous pouvez démarrer le bot en utilisant les fichiers suivants :
 
@@ -28,11 +28,11 @@ Configuration avancée :
 
 Vous pouvez personnaliser les paramètres du bot en modifiant le fichier AVHIRAL_BOT_CRYPTO_BINANCE_V7.8_OFF.py Assurez-vous de consulter la documentation pour connaître toutes les options de configuration disponibles.
 
-#Avertissement :
+# Avertissement :
 
 Le trading de crypto-monnaies comporte des risques. Assurez-vous de bien comprendre ces risques avant d'utiliser ce bot. L'auteur n'assume aucune responsabilité en cas de pertes financières dues à l'utilisation de ce logiciel.
 
-#Licence :
+# Licence :
 
 Ce projet est sous licence des droits d'auteur de la marque AVHIRAL. 
 
