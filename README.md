@@ -2,6 +2,10 @@
 
 Le Avhiral Crypto Trading Bot est un bot de trading automatisé qui prend en charge les échanges Coinbase et Binance. Ce bot est conçu pour vous aider à gérer votre portefeuille de crypto-monnaies en exécutant des ordres de trading en fonction de vos paramètres personnalisés.
 
+# Démo :
+
+https://github.com/AVHIRAL/Avhiral-Crypto-Trading-Bot/tree/main
+
 ## Installation
 
 Avant de pouvoir utiliser le bot, assurez-vous de suivre ces étapes d'installation :
