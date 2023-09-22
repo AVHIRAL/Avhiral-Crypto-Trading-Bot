@@ -29,7 +29,7 @@ class XORCipher:
         return ''.join(ciphertext)
 
     def decrypt(self, ciphertext):
-        return self.encrypt(ciphertext)  # XOR is its own inverse
+        return self.encrypt(ciphertext)  
 
 class TradingBot:
     remember_credentials_var = None
@@ -51,7 +51,7 @@ class TradingBot:
         self.charts = {}
         self.positions = {'BTC/USD': None, 'ETH/USD': None, 'MATIC/USD': None}
         self.entry_prices = {'BTC/USD': None, 'ETH/USD': None, 'MATIC/USD': None}
-        self.load_key()  # Appel à la méthode pour initialiser la clé XOR
+        self.load_key()  
 
     def load_key(self):
         # Load the XOR cipher key
@@ -125,7 +125,7 @@ class TradingBot:
                 'secret': self.api_secret,
             })
 
-            exchange.load_markets()  # Chargez les marchés ici
+            exchange.load_markets()  
             self.update_api_status_label()
             return exchange
         except ccxt.AuthenticationError as e:
@@ -217,7 +217,7 @@ class TradingBot:
         chart_container = ttk.Frame(frame)
         chart_container.grid(row=0, column=0, padx=10, pady=10)
 
-        root.protocol("WM_DELETE_WINDOW", self.on_closing)  # Gérer la fermeture de la fenêtre
+        root.protocol("WM_DELETE_WINDOW", self.on_closing)  
 
         root.mainloop()
 
@@ -309,10 +309,10 @@ class TradingBot:
 
     def on_closing(self):
         if self.thread and self.thread.is_alive():
-            self.exchange = None  # Arrêter la boucle de trading
-            self.thread.join()  # Attendre que le thread se termine
-        self.save_credentials()  # Sauvegarder les informations avant de quitter
-        self.credentials_window.destroy()  # Fermer la fenêtre principale
+            self.exchange = None  
+            self.thread.join()  
+        self.save_credentials()  
+        self.credentials_window.destroy()  
 
     def create_chart(self, pair):
         fig, ax = self.charts.get(pair, (None, None))
